@@ -2,7 +2,7 @@
 
 int main() {
     char employeeType;
-    printf("Input employee type (A/S/E/P/H): ");
+    printf("Input employee type: ");
     scanf(" %c", &employeeType);
 
     double monthlySalary, annualIncome, annualTax;
@@ -39,7 +39,7 @@ int main() {
             scanf("%lf", &monthlySalary);
             printf("Input overtime working hours per day: ");
             scanf("%lf", &overtimeHours);
-            printf("Is the employee going to take a vacation for a month? (Y/N): ");
+            printf("Is the employee going to take a vacation for a month? ");
             char vacationChoice;
             scanf(" %c", &vacationChoice);
             printf("Input sold product number in a year: ");
@@ -97,7 +97,7 @@ int main() {
     }
 
     char maritalStatus;
-    printf("Is this employee married? (Y/N): ");
+    printf("Is this employee married? ");
     scanf(" %c", &maritalStatus);
 
     if ((maritalStatus == 'Y' || maritalStatus == 'y') && annualIncome > 32000) {
